@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 100px;
+            background-color:rgb(234, 234, 234) ;
+        }
+        .contain{
+            width: 1000px;
+            display:grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 60px 500px 60px;
+            background-color: rgb(179, 151, 151);
+            border: 2px solid black;
+            grid-gap: 10px 10px;
+        }
+        .item{
+            font-size: 26px;
+            text-align: center;
+        }
+        .one{
+            background-color: cadetblue;
+            grid-row: 1/2;
+            grid-column: 1/6;
+        }
+        .two{
+            background-color: aquamarine;
+            grid-row:2/3;
+            grid-column: 1/2;
+        
+        }
+        .three{
+            background-color: burlywood;
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        .four{
+            background-color: blueviolet;
+            grid-row:2/3 ;
+            grid-column:3/4 ;
+            
+        }
+        .five{
+            background-color: chartreuse;
+            grid-row: 2/3;
+            grid-column: 4/5;
+            
+
+        }
+        .six{
+            background-color: crimson;
+            grid-row: 2/3;
+            grid-column: 5/6;
+           
+        }
+        .seven{
+            background-color: lemonchiffon;
+            grid-row: 3/4;
+            grid-column: 1/6;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="item one">one</div>
+        <div class="item two">two</div>
+        <div class="item three">three</div>
+        <div class="item four">four</div>
+        <div class="item five">five</div>
+        <div class="item six">six</div>
+        <div class="item seven">seven</div>
+
+    </div>
+    
+</body>
+</html>

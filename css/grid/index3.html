@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 100px;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 250px 250px 250px 250px;
+            
+        }
+        .item{
+            border: 2px solid rgb(78, 6, 6);
+            font-size: 36px;
+            text-align: center;
+        }
+        .one{
+            grid-row-start:1;
+            grid-column-start:1;
+            grid-row-end:span 2;  
+            grid-column-end:span 2;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one">One</div>
+        <div class="item to">Two</div>
+        <div class="item thr">Three</div>
+        <div class="item fur">Four</div>
+        <div class="item fiv">Five</div>
+    </div>
+    
+</body>
+</html>

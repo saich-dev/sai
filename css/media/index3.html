@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            background-color: rgb(139, 95, 181);
+            border: 10px solid rgb(0, 0, 0);
+            margin: 20px;
+        }
+        .contain{
+            display: grid;
+            width: 600px;
+            border: 10px solid rgb(50, 29, 29);
+            background-color: rgb(228, 176, 107);
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 60px auto 60px;
+
+        }
+        @media only screen and (min-width:600px) {
+            .contain{
+                display:grid;
+                width: 800px;
+                border: 10px solid rgb(50, 29, 29);
+                grid-template-columns: 100px 100px ;
+                grid-template-rows: 60px 200px 60px;
+                background-color: crimson;
+               
+            }
+        }
+        @media only screen and (min-width:700px) {
+            .contain{
+                display:grid;
+                width: 800px;
+                border: 10px solid rgb(50, 29, 29);
+                grid-template-columns: 100px 200px 100px;
+                grid-template-rows: 60px 200px ;
+                background-color: rgb(209, 222, 223);
+                }  
+            
+        }
+        @media only screen and (min-width:900px) {
+            .contain{
+                display:grid;
+                width: 800px;
+                border: 10px solid rgb(50, 29, 29);
+                grid-template-columns: 100px 200px 100px;
+                grid-template-rows: 60px 200px ;
+                background-color: cadetblue;
+                }  
+            
+        }
+        @media only screen and (min-width:1200px) {
+            .contain{
+                display:grid;
+                width: 800px;
+                background-color: blueviolet;
+                border: 10px solid springgreen;
+                grid-template-columns: 200px 300px 200px;
+                grid-template-rows: 60px 200px 200px;
+                
+            }
+        }
+        @media only screen and (min-width:1350px) {
+            .contain{
+                display:grid;
+                width: 800px;
+                background-color: rgb(222, 208, 21);
+                border: 10px solid rgb(79, 162, 121);
+                grid-template-columns: 30% 1fr;
+                grid-template-rows: 60px 200px auto;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+        <div>five</div>
+    </div>
+    
+    
+    
+</body>
+</html>

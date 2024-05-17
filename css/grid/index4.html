@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 100px;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 250px 250px 250px 250px;
+            grid-template-areas: 
+            "one one two three"
+            "one one four five"; 
+        }
+        .item{
+            border: 2px solid rgb(78, 6, 6);
+            font-size: 36px;
+            text-align: center;
+        }
+        .one{
+            grid-area: one;
+        }
+        .two{
+            grid-area: two;
+        }
+        .three{
+            grid-area: three;
+        }
+        .four{
+            grid-area: four;
+        }
+        .five{
+            grid-area: five;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one">One</div>
+        <div class="item two">Two</div>
+        <div class="item three">Three</div>
+        <div class="item four">Four</div>
+        <div class="item five">Five</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Dynamic sizing */
+        .container{
+            display:grid;
+            width: 900px;
+            height: 500px;
+            border: 10px solid rgb(70, 33, 33);
+            grid-template-columns: 50% 1fr 1fr 1fr;
+            grid-template-rows: 1fr 60% 1fr;
+            grid-gap:10px  10px;
+            text-align: center;
+        }
+        .child{
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child c">Lorem ipsum</div>
+        <div class="child d">dolor</div>
+        <div class="child e">sit</div>
+        <div class="child f">amet</div>
+    </div>
+    
+</body>
+</html>
