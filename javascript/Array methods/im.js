@@ -132,15 +132,29 @@
     let index = fruits.indexOf("Banana");
     console.log(index); 
 
+    let user = [11,44,99,66,55];
+    let into = user.indexOf(66);
+    console.log(into); 
+    
+
 15.//join// Joins all elements of an array into a string and returns this string.
     let f = ["Grapes", "Banana", "Mango"];
     let fruitString = f.join(", ");
-    console.log(fruitString); 
+    console.log(fruitString);
+    
+    let V = [44,79,64,32,77];
+    let Str = V.join("; ");
+    console.log(Str);
 
 16.//lastIndexOf()// Returns the last index at which a given element can be found.
     let g = [1, 2, 3, 2, 5, 2, 6];
     let lastIndex = g.lastIndexOf(3);
     console.log(lastIndex); 
+
+    let unic = ["uday", "uni", "vishal", "arjun", "kumar", "pater", "colin"];
+    let last = unic.lastIndexOf("kumar");
+    console.log(last);
+
 17.//constructor//
     class Person {
     constructor(name, age) {
@@ -154,7 +168,7 @@
     let person1 = new Person("Alice", 30);
     person1.display(); 
 
-18.//findIndex//
+18.//findIndex//  Returns the index of the first element that passes the test implemented by the provided function.
     const element = [4, 9, 16, 25, 29];
     const ind = element.findIndex(num => num > 10);
     console.log(ind); 
@@ -163,27 +177,27 @@
     const indus = ELE.findIndex(num => num > 45);
     console.log(indus);
 
-19.//findlast//
+19.//findlast//    The findLast method in JavaScript is used to return the value of the last element in an array that satisfies a provided testing function.
     const sum = [5, 8, 12, 19, 21, 33, 37];
     const lastGreaterThan20 = sum.findLast(number => number > 20);
     console.log(lastGreaterThan20);
 
-20.//findLastIndex//
+20.//findLastIndex//    The lastIndexOf method in JavaScript is used to find the index of the last occurrence of a specified value within an array.
     const H = [4, 9, 15, 19, 22, 33, 37];
     const lastGreaterThan20Index = H.findLastIndex(number => number > 20);
     console.log(lastGreaterThan20Index); 
  
-21.//flat//
+21.//flat//  Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
     const arr1 = [4, 5, [6, 7]];
     const flatArr1 = arr1.flat();
     console.log(flatArr1); 
 
-22.//flatMap//
+22.//flatMap//   Maps each element using a mapping function, then flattens the result into a new array.
     const arr = [4, 5, 6, 7];
     const flatMappedArr = arr.flatMap(x => [x, x * 2]);
     console.log(flatMappedArr); 
 
-23.//includes//
+23.//includes//   Determines whether an array contains a specified element.
     const fru = ["apple", "banana", "mango", "orange"];
     console.log(fru.includes("banana")); 
     console.log(fru.includes("grapes"));
@@ -193,8 +207,8 @@
     console.log(z.includes("banana", 2)); 
     console.log(z.includes("banana", 4)); 
     console.log(z.includes("banana", 5)); 
-
-24.//join//    
+ 
+24.//join//    Determines whether an array contains a specified element. 
     let w = [1, 2, 3, 4, 5];
     let result = w.join(" * ");
     console.log(result); 
@@ -207,7 +221,7 @@
     let resultS = fruits.join(" + ");
     console.log(resultS); 
 
-25.//keys//
+25.//keys//   Returns a new Array Iterator object that contains the keys for each index in the array.
     const person = {
     name: "Sai",
     age: 28,
@@ -216,7 +230,7 @@
     const K = Object.keys(person);
     console.log(K); 
 
-26.//values//   
+26.//values//    Returns a new Array Iterator object that contains the values for each index in the array.
     const p = {
     name: "Harsha",
     age: 18,
@@ -225,8 +239,9 @@
     const J = Object.values(p);
     console.log(J);  
 
-27.//reduce//
-   //reduce syntax//
+27.//reduce//    Executes a reducer function on each element of the array, resulting in a single output value.
+
+   //reduce syntax// 
    //array.reduce(callbackFunction(accumulator, currentValue, index, array), initialValue)
     const initialValue = 0; 
     const nxt = [4,5,6,7];
@@ -237,7 +252,8 @@
     const u = N.reduce((accumulator, currentValue, currentindex) => accumulator + currentValue + currentindex, 0);
     console.log(u); 
 
-28.//reduce right//
+28.//reduce right//   Executes a reducer function on each element of the array, from right to left, resulting in a single output value.
+
    //reduce right  syntax//  //
    //array.reduceRight(callback(accumulator, currentValue, index, array), initialValue)
 
@@ -259,7 +275,7 @@
     }, 1);
     console.log(product); 
 
-29.//slice//
+29.//slice//   Returns a shallow copy of a portion of an array into a new array.
     let veg = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
     let citrus = veg.slice(1, 3);
     console.log(citrus); 
@@ -274,7 +290,7 @@
     let lastTwo = non.slice(-2);
     console.log(lastTwo); 
 
-30.//some//
+30.//some//    Tests whether at least one element in the array passes the test implemented by the provided function.
     const array = [1, 2, 3, 4, 5];
     const hat = array.some(element => element > 3);
     console.log(hat);
@@ -288,7 +304,8 @@
     const Passing = grades.some(grade => grade >= 50);
     console.log(Passing); 
 
-31.//splice//  
+31.//splice//   Adds and/or removes elements from an array.
+
    //splice syntax//
    //array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
 
@@ -305,7 +322,7 @@
     col.splice(2, 0, 'yellow', 'orange');
     console.log(col); 
 
-32.//sort//
+32.//sort//     Sorts the elements of an array in place.
     let arr4 = [44,25,15,77,20];
     const sai = arr4.sort();
     console.log( arr4.sort()); 
@@ -324,7 +341,8 @@
     const s = arr3.sort(comparefunction);
     console.log("s",s);
 
-33.//toLocaleString//  
+33.//toLocaleString//   Returns a localized string representing the array and its elements.  
+
    // toLocaleString  syntax//
    //number.toLocaleString(locales, options)//
 
@@ -338,7 +356,7 @@
    console.log(NumberEN); 
    console.log(NumberDE); 
 
-34.//toReversed//
+34.//toReversed//  Reverses the order of the elements in an array.
 
     Array.prototype.toReversed = function() {
     return this.slice().reverse();
@@ -362,7 +380,7 @@
     const reversedWords = wow.toReversed();
     console.log(reversedWords); 
 
-35.//toSorted//
+35.//toSorted//    Sorts the elements of an array in place.
 
     const yet = [3, 1, 5, 2, 4];
     const sortedNumbers = yet.toSorted((a, b) => a - b);
@@ -375,7 +393,7 @@
     console.log(sortedFruits); 
     console.log(fry);   
     
-36.//toSpliced//
+36.//toSpliced//     Adds and/or removes elements from an array.   
 
     const nest = ['Apple', 'Banana', 'Cherry', 'Date'];
     const newFruits = nest.toSpliced(1, 2);
@@ -387,7 +405,7 @@
     console.log(newNumbers); 
     console.log(nut);  
 
-37.//toString//
+37.//toString//    Returns a string representing the array and its elements.
 
     const arr6= [19, 25, 36, 49, 55];
     const arrString = arr6.toString();
@@ -403,7 +421,7 @@
     console.log(dateString); 
     console.log(typeof dateString);
 
-38.//with//
+38.//with//    The with statement in JavaScript was used to create a shortcut for accessing properties of an object. 
 
 const per = {
     firstName: 'kiran',
@@ -419,8 +437,6 @@ const per = {
     console.log(age);        
     console.log(city);  
   }
-
-
 
 
 
@@ -444,6 +460,64 @@ const per = {
     console.log(model); 
     console.log(year);       
   }
+
+39.//for each//   Executes a provided function once for each array element.
+    const ele = [11, 22, 33, 44, 55];
+    let main = 0;
+    ele.forEach(number => {
+    main += number;
+    });
+    console.log(main); 
+
+    const given = ['apple', 'banana', 'cherry'];
+    given.forEach(fruit => {
+    console.log(fruit);
+    });
+
+    const scores = [89, 95, 72, 100, 83];
+    let totalScore = 0;
+    scores.forEach(score => {
+    totalScore += score;
+    });
+    console.log(totalScore);
+
+
+    const part = ['apple', 'banana', 'cherry'];
+    const uppercase = [];
+    part.forEach(fruit => {
+    uppercase.push(fruit.toUpperCase());
+    });
+    console.log(uppercase); 
+
+40.//map//   Creates a new array with the results of calling a provided function on every element.
+    const Numbers = [25,41,35,65,77];
+    const doubled= Numbers.map(number => number * 2);
+    console.log(doubled); 
+
+
+    const distances = [10, 20, 30, 40, 50];
+    const kmToMiles = 0.621371;
+    const distance = distances.map(distance => distance * kmToMiles);
+    console.log(distance); 
+
+
+    const users = [
+    { id: 1, name: 'sai' },
+    { id: 2, name: 'Bobby' },
+    { id: 3, name: 'Charlie' }
+    ];
+    const userNames = users.map(user => user.name);
+    console.log(userNames); 
+    console.log(users); 
+      
+
+
+      
+    
+      
+
+
+
 
 
   
