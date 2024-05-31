@@ -3,7 +3,7 @@
 }
 .block{
     display: block;
-    border: 10px solid black;
+    border: 10px solid rgb(254, 52, 52);
     padding: 5px;
     margin: 5px;
     width: 200px;
@@ -12,7 +12,7 @@
 }
 .inline{
     display:inline;
-    border: 10px solid rgb(19, 189, 7);
+    border: 10px solid rgb(226, 214, 43);
     padding:10px;
     margin: 10px;
     width: 200px;
@@ -32,5 +32,5 @@ html{
     font-size: larger;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
 }
