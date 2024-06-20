@@ -1,0 +1,26 @@
+
+// Stopping Event Bubbling//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Example</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="child">Click me</button>
+    </div>
+
+    <script>
+        document.getElementById('parent').addEventListener('click', function() {
+            console.log('Parent clicked');
+        });
+
+        document.getElementById('child').addEventListener('click', function(event) {
+            console.log('Button clicked');
+            event.stopPropagation(); 
+        });
+    </script>
+</body>
+</html>

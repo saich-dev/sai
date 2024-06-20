@@ -252,6 +252,21 @@
     const u = N.reduce((accumulator, currentValue, currentindex) => accumulator + currentValue + currentindex, 0);
     console.log(u); 
 
+
+    kk = [25,44,77,26,33];
+    const Value = 0; 
+    const Sums = function(accumulator,currentValue,currentindex){
+        console.log("accumulator",accumulator);
+        console.log("currentValue",currentValue);
+        console.log("currentindex",currentindex);
+        return accumulator+currentValue;
+
+    }
+    const reducer = kk.reduce(Sums,Value)
+    console.log("reducer",reducer);
+
+
+
 28.//reduce right//   Executes a reducer function on each element of the array, from right to left, resulting in a single output value.
 
    //reduce right  syntax//  //
@@ -489,6 +504,19 @@ const per = {
     });
     console.log(uppercase); 
 
+
+    var arr10 =[22,55,60,70,80];
+    let cb = function(element,index,completearray){
+        console.log ("start")
+        console.log ("element",element)
+        console.log ("index",index)
+        console.log ("completearray",completearray)
+        console.log ("end")
+    }
+     arr10.forEach(cb, this);
+
+
+
 40.//map//   Creates a new array with the results of calling a provided function on every element.
     const Numbers = [25,41,35,65,77];
     const doubled= Numbers.map(number => number * 2);
@@ -509,6 +537,21 @@ const per = {
     const userNames = users.map(user => user.name);
     console.log(userNames); 
     console.log(users); 
+
+
+    var see =[55,88,65,88,77];
+    console.log("see",see);
+    const cb1 = function (element,index,fullarray) {
+       //return Math.sqrt(element); 
+       //return element*2;
+       //return Math.sqrt(index); 
+       //return index*2;
+       //return Math.sqrt(fullarray); 
+       //return fullarray*2;
+    }
+    let van = see.map(cb1,this);
+    console.log("van",van);
+
       
 
 
