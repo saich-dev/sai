@@ -35,9 +35,10 @@
     // Selecting elements by tag name
     const listItems = document.getElementsByTagName('li');
     console.log('List items:', listItems);
+
     // Selecting an element with querySelector
     const firstParagraph = document.querySelector('.text');
-    console.log('First element with class "text":', firstParagraph);
+    console.log('First element with class', firstParagraph);
     firstParagraph.style.color = 'blue'; // Change text color
 
     // Selecting elements with querySelectorAll
@@ -45,9 +46,6 @@
     console.log('All elements with class "text":', allTextElements);
    
 
-    // More complex selectors with querySelector and querySelectorAll
-    const spanInContainer = document.querySelector('.container span');
-    console.log('Span inside container:', spanInContainer);
-    spanInContainer.classList.add('highlight'); // Highlight the span
+    
 
     
