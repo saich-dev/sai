@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 100px;
+        }
+        .grid-container{
+            display: grid;
+            width: 1245px;
+            border: 5px solid springgreen;
+            grid-template-columns: 250px auto 250px ;
+            grid-template-rows: 60px;
+            grid-template-areas: 
+            "page page page"
+            "left article article1";
+            grid-gap:24px 24px;
+        }
+        .grid-item{
+            text-align: center;
+            font-size: 26px;
+            
+        }
+        .page{
+            background-color: blueviolet;
+            grid-area: page;
+        }
+        .left{
+            background-color: aqua;
+            grid-area: left;
+            grid-row: 2/4;
+
+        }
+        .article{
+            background-color: brown;
+            grid-area: article;
+            grid-row: 2/4;
+        
+        }
+        .article1{
+            background-color:springgreen;
+            grid-row: 2/3;
+           grid-column: 3/4;
+           height: 338px;
+           
+        }
+        .article2{
+            background-color:rgb(246, 255, 0);
+            grid-row: 3/4;
+            grid-column: 3/4;
+            height: 338px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item page">page</div>
+        <div class="grid-item left">leftside</div>
+        <div class="grid-item article">article</div>
+        <div class="grid-item article1">article1</div>
+        <div class="grid-item article2">article2</div>
+    </div>
+</body>
+</html>

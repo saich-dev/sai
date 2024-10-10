@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+        .container{
+            display: grid;
+            width: 1210px;
+            border: 5px solid black;
+            margin: 30px;
+            grid-template-columns: 250px 684px 250px ;
+            grid-template-rows: 60px ;
+            grid-template-areas: 
+            "page page page"
+            "left article article1";
+            grid-gap:10px 10px;
+        }    
+        .grid-item{
+            text-align: center;
+            font-size: 30px;
+        }
+        .inner-grid {
+            display: grid;
+            width: 500px;
+            height: 676px;
+            grid-template-columns: 1fr 1fr;
+          }
+        .page{
+            background-color: blueviolet;
+            grid-area: page;
+        }
+        .left{
+            background-color: aqua;
+            grid-area: left;
+            grid-row: 2/4;
+
+        }
+        .article{
+            background-color: brown;
+            grid-area: article;
+            grid-row: 2/4;
+        
+        }
+        .article1{
+            background-color:springgreen;
+            grid-row: 2/3;
+           grid-column: 3/4;
+           height: 338px;
+           
+        }
+        .article2{
+            background-color:rgb(246, 255, 0);
+            grid-row: 3/4;
+            grid-column: 3/4;
+            height: 338px;
+            
+        }
+        
+        </style>
+        <div class="container">
+            <div class="grid-item page">Page Header</div>
+            <div class="grid-item left">Left side menu</div>
+            <div class="grid-item article">Article</div>
+            <div class="grid-item article1">Article1</div>
+            <div class="grid-item article2">Article2</div>
+        </div>
+
+</head>
+<body>
+
+    
+</body>
+</html>

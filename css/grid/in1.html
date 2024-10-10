@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 100px;
+            background-color:rgb(234, 234, 234) ;
+        }
+        .contain{
+            width: 1000px;
+            display:grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 60px 500px 60px;
+            background-color: rgb(179, 151, 151);
+            border: 2px solid black;
+        }
+        .item{
+            font-size: 26px;
+            text-align: center;
+        }
+        .one{
+            background-color: rgb(59, 120, 122);
+            grid-row: 1/2;
+            grid-column: 1/6;
+        }
+        .two{
+            display: grid;
+            grid-template-rows:1fr 1fr 1fr;
+            background-color: aquamarine;
+            grid-row:2/3;
+            grid-column: 1/2;
+        
+        }
+        .two div{
+            border: 2px solid  seashell;
+            margin: 1px; 
+            padding: 1px;
+            background-color: cadetblue;
+        }
+        .three{
+            display: grid;
+            grid-template-columns:1fr 1fr ;
+            background-color: aquamarine;
+            
+            
+        }
+        .three div{
+            border: 1px solid darkorange;
+            margin: 1px;
+            padding: 1px;
+            background-color: forestgreen;
+        }
+        .four{
+            display: grid;
+            grid-template-rows:1fr;
+            background-color: blueviolet; 
+        }
+        .four div{
+            background-color: lightsalmon;
+            margin: 10px;
+            padding: 10px;
+        }
+        .five{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            background-color: chartreuse;
+        }
+        .five div{
+            border: 2px solid salmon;
+            margin: 5px;
+            padding: 5px;
+            background-color: cyan;
+        }
+
+        .six{
+            display: grid;
+            background-color: crimson;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        }
+        .six div{
+            border: 1px solid cornflowerblue;
+            margin: 1px;
+            padding: 1px;
+            background-color: gold;
+        }
+        .seven{
+            background-color: magenta;
+            grid-row: 3/4;
+            grid-column: 1/6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="item one">one</div>
+        <div class="item two">
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <div class="item three">
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="item four">
+            <div>3</div>
+            
+
+        </div>
+        <div class="item five">
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div class="item six">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="item seven">seven</div>
+
+    </div>
+    
+</body>
+</html>
